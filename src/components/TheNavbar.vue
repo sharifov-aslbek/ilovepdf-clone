@@ -126,9 +126,46 @@
               </a>
             <router-link :to="{name: 'login'}" class="login">Вход</router-link>
             <router-link :to="{name: 'register'}" class="register">Регистрация</router-link>
-            <a href="#">
+            <div class="menu-navigation">
+               <a href="#">
                <i class="fa-solid fa-bars"></i>
-            </a>
+               </a>
+            <div class="navigation">
+               <div class="home">
+                  <router-link :to="{name: 'home'}"><i class="fa-solid fa-heart-circle-check"></i> Главная страница</router-link>
+               </div>
+
+               <div class="products">
+                  <i class="fa-solid fa-box"></i>
+                  <p>Продукт</p>
+               </div>
+               <div class="solutions">
+                  <i class="fa-solid fa-lightbulb"></i>
+                  <p>Решения</p>
+               </div>
+
+               <div class="definition">
+                  <router-link to="">
+                     <i class="fa-solid fa-tag"></i>
+                     <p>Расценки</p>
+                  </router-link>
+               </div>
+               <hr>
+               <div class="language">
+                  <i class="fa-solid fa-globe"></i>
+                  <p>Язык</p>
+               </div>
+
+               <div class="question">
+                  <i class="fa-solid fa-circle-question"></i>
+                  <p>Помощь</p>
+               </div>
+               <hr>
+               <div class="iloveimg">
+                  <a href="https://www.iloveimg.com/ru"> <i class="fa-solid fa-heart-circle-bolt"></i> iLoveIMG</a>
+               </div>
+            </div>
+            </div>
            </div>
       </nav>
    </header>
@@ -218,6 +255,17 @@ export default {
    display: flex;
    gap: 7px;
    flex-direction: column;
+}
+
+.head .navbar .menu .all-instruments .edit {
+   display: flex;
+   gap: 7px;
+   flex-direction: column;
+}
+.head .navbar .menu .all-instruments .protection {
+   display: flex;
+   flex-direction: column;
+   gap: 7px;
 }
 
 
@@ -323,6 +371,21 @@ export default {
    justify-content: center;
    gap: 20px;
 }
+
+.head .navbar .actions .menu-navigation {
+   display: flex;
+   flex-direction: column;
+}
+
+.head .navbar .actions .menu-navigation .navigation {
+   position: absolute;
+   top: 50px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+}
+
 
 .head .navbar .actions i {
    font-size: 20px;
