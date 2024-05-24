@@ -6,7 +6,7 @@
       <h1>test</h1>
       <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe aliquam ipsum ad eius maxime unde numquam sint cumque? Incidunt architecto, libero quo laudantium non nemo fuga vel ut excepturi nostrum eveniet maiores consequatur praesentium, vitae esse quia et voluptatum voluptatem! Excepturi mollitia fugit quaerat quis ad repellendus ipsam cumque, deleniti explicabo sit, nulla minima placeat facilis ea soluta, corporis veritatis impedit quasi illo a? Dolore suscipit quae, recusandae porro maxime earum optio et architecto, facere blanditiis est placeat quisquam odio quaerat sapiente accusamus alias possimus temporibus aliquid eius vitae magni? Animi veniam, tenetur quod error deleniti earum vitae! Rerum, animi?</p>
     </div>
-
+    <Card :title="'Bu text'" :text="'This is paragraph'" :src="'src/assets/images/logo.svg'" :router="'register'"/>
   </section>
 </template>
 

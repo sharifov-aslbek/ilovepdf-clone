@@ -1,3 +1,4 @@
 import TheConvertMenu from "./TheConvertMenu.vue";
 import TheConvertMenuRight from "./TheConvertMenuRight.vue";
-export default [TheConvertMenu , TheConvertMenuRight]
+import TheCard from './TheCard.vue'
+export default [TheConvertMenu , TheConvertMenuRight , TheCard]
