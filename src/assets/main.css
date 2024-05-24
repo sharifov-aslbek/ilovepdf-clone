@@ -1,8 +1,8 @@
 .container {
   width: 100%;
   max-width: 91%;
-  margin: 0 auto;
   padding: 0px 15px;
+  margin: 0 auto;
 }
 @font-face {
   font-family: 'Roboto';
@@ -19,5 +19,5 @@ a {
 }
 
 a.router-link-exact-active {
-  color: red;
+  color: #e5322d;
 } 

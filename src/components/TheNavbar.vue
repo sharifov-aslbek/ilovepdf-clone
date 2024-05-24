@@ -121,13 +121,14 @@
                   <div class="arrow-up"></div>
                  <h3>iLovePDF Desktop, работайте в автономном режиме</h3>
               </div>
-              <a href="#" @click="toDesktop" @mouseenter="onDesktopHover = !onDesktopHover" @mouseleave="onDesktopHover = !onDesktopHover">
+              <button class="desk-btn" @click="toPage('desktop')" @mouseenter="onDesktopHover = !onDesktopHover" @mouseleave="onDesktopHover = !onDesktopHover">
                  <i class="fa-solid fa-desktop" ></i>
-              </a>
+              </button>
+              
             <router-link :to="{name: 'login'}" class="login">Вход</router-link>
             <router-link :to="{name: 'register'}" class="register">Регистрация</router-link>
-            <div class="menu-product">
-                     <router-link to="">
+            <div class="menu-product" :class="{'active': toggleMenuProduct}" @mouseleave='toggleMenuProduct = false'>
+                     <router-link :to="{name: 'desktop'}">
                         <i class="fa-solid fa-desktop"></i>
                         <p>Настольная версия</p>
                      </router-link>
@@ -152,8 +153,8 @@
                         <p>Плагин для WordPress</p>
                      </router-link>
                   </div>
-               <div class="menu-solutions">
-                  <router-link to="">
+               <!-- <div class="menu-solutions">
+                  <router-link to="shopping">
                      <i class="fa-solid fa-bag-shopping"></i>
                      <p>Бизнес</p>
                   </router-link>
@@ -165,17 +166,24 @@
                      <i class="fa-solid fa-mobile"></i>
                      <p>Разработчики</p>
                   </router-link>
+               </div> -->
+               <!-- <div class="menu-language">
+                  <Language />
+               </div> -->
+               <div class="menu-faq">
+
                </div>
             <div class="menu-navigation">
-               <a href="#">
+               <a href="#" @mouseenter="AllMenuOpen = true">
                <i class="fa-solid fa-bars"></i>
                </a>
-            <div class="navigation">
+            <div class="navigation" :class="{'active': AllMenuOpen}">
+               <!-- for mouse leave navigation @mouseleave="allMenuOpenBig" -->
                <div class="home">
                   <router-link :to="{name: 'home'}"><i class="fa-solid fa-heart"></i> Главная страница</router-link>
                </div>
 
-               <div class="products">
+               <div class="products" @mouseenter="toggleMenuProduct = true">
                   <i class="fa-solid fa-box"></i>
                   <p>Продукт</p>
                </div>
@@ -219,6 +227,8 @@ export default {
          convertMenu: false,
          allInstruments: false,
          onDesktopHover: false,
+         toggleMenuProduct: false,
+         AllMenuOpen: false
       }
    },
    methods: {
@@ -228,13 +238,23 @@ export default {
       toDesktop() {
          return this.$router.push({name: 'desktop'})
       },
+      toPage(router) {
+         return this.$router.push({name: router})
+      },
       convertMenuOpen() {
          this.convertMenu = !this.convertMenu
       },
       allMenuOpen() {
          this.allInstruments = !this.allInstruments
+      },
+      toggleMenuProductFunc() {
+         this.toggleMenuProduct = !this.toggleMenuProduct
+      },
+      allMenuOpenBig() {
+         this.AllMenuOpen = false
+         this.toggleMenuProduct = false
       }
-   }  
+   }, 
 }
 </script>
 
