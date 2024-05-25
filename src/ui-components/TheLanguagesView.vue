@@ -48,7 +48,8 @@ export default {
       display: flex;
       justify-content: flex-start;
       gap: 50px;
-      width: 450px;
+      width: 100%;
+      max-width: 450px;
       background: #fff;
       border-radius: 16px;
       border: 1px solid rgb(177, 177, 177);
@@ -65,5 +66,23 @@ export default {
 
    a.router-link-exact-active {
   color: #161616;
+   }
+
+
+   
+   @media (max-width:467px) {
+      .languages {
+         gap: 25px;   
+      }
+      .languages .category {
+         font-size: 10px; 
+      }
+
+   }
+
+   @media (max-width:370px) {
+      .languages {
+         gap: 6px;
+      }
    }
 </style>

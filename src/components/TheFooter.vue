@@ -52,18 +52,18 @@
          </div>
 
          <hr>
-
-            <div class="menu-language">
-                  <Language />
-               </div>
+         <div class="menu-language" v-show="languageMenu"  @mouseenter="languageMenu = !languageMenu" @mouseleave="languageMenu = !languageMenu">
+               <Language/>
+         </div>
+         
          <div class="foot">
-            <div class="language">
+            <div class="language" @mouseenter="languageMenu = true" @mouseleave="languageMenu = !languageMenu">
                <i class="fa-solid fa-globe"></i>
                <p>Pусский</p>
                <i class="fa-solid fa-caret-down"></i>
             </div>
-
-
+            
+            
             <div class="editor">
                <p>© iLovePDF 2024 ® - Ваш PDF Редактор</p>
                <div class="companies">
@@ -94,6 +94,7 @@
 export default {
    data() {
       return {
+      languageMenu: false,
       }
    },  
 }
@@ -108,6 +109,7 @@ export default {
    .footer .container {
       display: flex;
       flex-direction: column;
+      position: relative;
    }
 
    .footer .container .text-content {
@@ -118,12 +120,11 @@ export default {
    }
 
    .footer .container .menu-language {
-      position: absolute;
-      top: 100px;
-      height: 0px;
-      overflow: hidden;
-      left: 63px;
+      /* height: 0px;
+      overflow: hidden; */
       transition: 0.4s;
+      top: 80px;
+      position: absolute;
    }
 
    .footer .container .text-content .content {
@@ -175,10 +176,6 @@ export default {
       color: #47474f;
    }
    
-   .footer .container .foot .language:hover + .footer .container .menu-language {
-      height: auto;
-   }
-   
    
    .footer .container .foot .editor {
       display: flex;
@@ -210,6 +207,11 @@ export default {
       width: 100%;
       margin-top: 25px;
    }
+   @media (max-width:1300px) {
+      .footer .container .menu-language {
+         top: 120px;
+      }
+   }
    @media (max-width:1259px) {
       .footer .container .text-content {
          justify-content: center;
@@ -218,6 +220,12 @@ export default {
 
       .footer .container .foot .editor p {
          font-size: 13px; 
+      }
+   }
+
+   @media (max-width:1225px)  {
+      .footer .container .menu-language {
+         top: 340px;
       }
    }
    @media (max-width:625px) {
@@ -253,12 +261,16 @@ export default {
       .footer .container .text-content .content a {
          font-size: 11px; 
       }
+      .footer .container .menu-language {
+         top: 280px;
+      }
       .footer .container .foot .language {
          justify-content: center;
       }
       .footer .container .foot {
          flex-direction: column;
       }
+   
    }
 
    @media (max-width:365px) {
@@ -274,6 +286,10 @@ export default {
       }
       .footer .container .advertising {
          flex-direction: column;
+      }
+
+      .footer .container .menu-language {
+         top: 700px;
       }
    }
 </style>
