@@ -42,7 +42,7 @@
          </div>
 
       </div>
-
+      <!-- containerdan tashqari -->
       <div class="statics">
          <div class="content">
             <div class="img-content">
@@ -73,7 +73,7 @@
             </div>
          </div>
       </div>
-
+      <!-- containerdan tashqarida -->
       <div class="platforms">
          <div class="text-content">
             <h2 class="title">Свобода выбора платформы</h2>
@@ -91,6 +91,42 @@
          <div class="img-content">
             <img src="../assets/images/features-platform-img.svg" alt="err">
          </div>
+      </div>
+      <!-- containerdan tashqarida -->
+      <div class="statics">
+         <div class="content">
+            <div class="img-content">
+            <img src="../assets/images/plan-premium-img.png" alt="err">
+         </div>
+
+         <div class="text-content">
+               <h2 class="title">Получите еще больше возможностей с планом Premium</h2>
+               <p class="subtitle">Иногда вам просто нужно дополнительные возможности. Улучшите свой опыт работы с iLovePDF и увеличьте свою производительность</p>
+
+               <h4 class="uptitle">
+                  Создать команду
+               </h4>
+
+               <p class="paragraph">
+                  Премиум-функции включают управление собственной командой для обмена действиями по умолчанию. Добавление водяного знака с вашим корпоративным логотипом или установка формата номера страницы, и это всего лишь пара возможностей.
+               </p>
+
+               <h4 class="uptitle">
+                  Воспользуйтесь преимуществами более высокого плана
+               </h4>
+
+               <p class="paragraph">
+                  Используйте наши инструменты и выполняйте свою работу еще быстрее, увеличив лимиты размера и количества файлов для каждого процесса. Используйте преимущества рабочего пространства без рекламы и неограниченного доступа ко всем нашим услугам.
+               </p>
+
+               
+            </div>
+         </div>
+      </div>
+
+      <div class="heart">
+         <i class="fa-solid fa-heart-pulse"></i>
+         <h2 class="heart-title">Каждая ваша текущая проблема с PDF, может стать нашей следующей задачей</h2>
       </div>
    </section>
 </template>
