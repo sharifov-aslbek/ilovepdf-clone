@@ -1,0 +1,158 @@
+.hero-content .functions {
+   background: #f5f5fa;
+}
+
+.hero-content .functions .content {
+   width: 100%;
+   max-width: 85%;
+   margin: 0 auto;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 60px 0px;
+}
+
+.hero-content .functions .text-content .head-title {
+   font-size: 60px;
+   line-height: 70px;
+   width: 250px;
+   font-weight: 700;
+   margin-bottom: 30px;
+}
+
+.hero-content .functions .text-content .subtitle {
+   width: 100%;
+   max-width: 450px;
+}
+
+.hero-content .subtitle {
+   font-size: 22px;
+   font-weight: 400;
+   color: #47474f;
+   line-height: 32px;
+}
+
+.hero-content p {
+   color: #47474f;
+}
+.hero-content .functions .img-content img {
+   width: 540px;
+}
+
+.hero-content .container {}
+
+.hero-content .container .safety-service {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   margin: 70px 0px 100px;
+}
+
+.hero-content .title {
+   font-weight: 600; 
+   font-size: 42px;
+   line-height: 52px;
+   color: #33333b;
+}
+
+.hero-content .container .safety-service .title {
+   width: 100%;
+   max-width: 1000px;
+   margin: 0 auto;
+}
+
+.hero-content .container .safety-service .subtitle {
+   width: 100%;
+   margin: 20px auto 50px;
+   max-width: 1050px;
+   text-align: center;
+}
+
+.hero-content .container .safety-service .cards {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-wrap: wrap;
+   gap: 20px;
+}
+
+.hero-content .container .safety-service .cards .card {
+   display: flex;
+   align-items: flex-start;
+   justify-content: flex-start;
+   flex-direction: column;
+   width: 100%;
+   max-width: 290px;
+   background: red;
+   padding: 20px 25px 30px;
+   height: 320px;
+   gap: 15px;
+   border-radius: 8px;
+   background: #fff;
+   -webkit-box-shadow: 0 5px 30px 0 hsla(0, 0%, 9%, .1);
+    box-shadow: 0 5px 30px 0 hsla(0, 0%, 9%, .1);
+}
+
+.hero-content .container .safety-service .cards .card .card-title {
+   font-weight: 600;
+   font-size: 20px;
+   color: #33333b;
+   line-height: 28px;
+}
+
+.hero-content .container .safety-service .cards .card .card-subtitle {
+   line-height: 28px;
+   font-weight: 400;
+   font-size: 16px;
+   color: #707078;
+}
+
+.hero-content .statics {
+   background: #f5f5fa;
+}
+.hero-content .statics .content {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 100px 0px;
+   width: 100%;
+   max-width: 85%;
+   margin: 0 auto;
+}
+
+.hero-content .statics .content .img-content img {
+   width: 570px;
+}
+
+.hero-content .statics .content .text-content {
+   width: 100%;
+   max-width: 42%;
+}
+
+.hero-content .statics .content .text-content .title {
+   width: 100%;
+   max-width: 470px;
+}
+
+.hero-content .statics .content .text-content .subtitle {
+   width: 100%;
+   max-width: 450px;
+   margin: 16px 0px 0px;
+}
+
+.hero-content .statics .content .text-content .uptitle {
+   font-size: 20px;
+   color: #33333b;
+   font-weight: 600;
+   width: 100%;
+   max-width: 490px;
+   margin-bottom: 16px;
+   margin-top: 50px;
+}
+
+.hero-content .statics .content .text-content .paragraph {
+   width: 100%;
+   max-width: 480px;
+   line-height: 27px;
+}

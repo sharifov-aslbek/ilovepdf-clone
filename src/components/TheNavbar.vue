@@ -10,16 +10,16 @@
             <router-link class="convert-a" to="" >Разделить PDF</router-link>
             <router-link class="convert-a" to="home">Сжать PDF</router-link>
             <div class="convert">
-               <a href="#" class="convert-link" @mouseenter="convertMenuOpen">КОНВЕРТИРОВАТЬ PDF <i class="fa-solid fa-chevron-down"></i></a>
-               <div class="converter-menu" v-show="convertMenu" @mouseleave="convertMenuOpen">
+               <a href="#" class="convert-link" @mouseenter="convertMenu = true" @mouseleave="convertMenu = !convertMenu">КОНВЕРТИРОВАТЬ PDF <i class="fa-solid fa-chevron-down"></i></a>
+               <div class="converter-menu" v-show="convertMenu" @mouseenter="convertMenu = !convertMenu" @mouseleave="convertMenu = !convertMenu">
                   <div class="arrow-up"></div>
                   <ConvertMenuLeft />
                   <ConvertMenuRight />
                </div>
             </div>
             <div class="all-instruments">
-               <a href="#" class="convert-link" @mouseenter="allMenuOpen">ВСЕ ИНСТРУМЕНТЫ PDF <i class="fa-solid fa-chevron-down"></i></a>
-               <div class="all-menu" @mouseleave="allMenuOpen" v-show="allInstruments">
+               <a href="#" class="convert-link" @mouseenter="allInstruments = true" @mouseleave="allInstruments = !allInstruments">ВСЕ ИНСТРУМЕНТЫ PDF <i class="fa-solid fa-chevron-down"></i></a>
+               <div class="all-menu" @mouseenter="allInstruments = !allInstruments" @mouseleave="allInstruments = !allInstruments" v-show="allInstruments">
                   <div class="arrow-up"></div>
                   <div class="organization">
                      <h3 class="title-text">ОРГАНИЗОВАТЬ PDF</h3>
@@ -174,10 +174,10 @@
 
                </div>
             <div class="menu-navigation">
-               <a href="#" @mouseenter="AllMenuOpen = true">
-               <i class="fa-solid fa-bars"></i>
-               </a>
-            <div class="navigation" :class="{'active': AllMenuOpen}">
+               <div id="bars" @mouseenter="AllMenuOpen = true" @mouseleave="AllMenuOpen = !AllMenuOpen">
+                  <i class="fa-solid fa-bars"></i>
+               </div>
+            <div class="navigation" :class="{'active': AllMenuOpen}" @mouseenter="AllMenuOpen = !AllMenuOpen" @mouseleave="AllMenuOpen = !AllMenuOpen">
                <!-- for mouse leave navigation @mouseleave="allMenuOpenBig" -->
                <div class="home">
                   <router-link :to="{name: 'home'}"><i class="fa-solid fa-heart"></i> Главная страница</router-link>
@@ -198,7 +198,6 @@
                      <p>Расценки</p>
                   </router-link>
                </div>
-               <hr>
                <div class="language">
                   <i class="fa-solid fa-globe"></i>
                   <p>Язык</p>
@@ -208,8 +207,6 @@
                   <i class="fa-solid fa-circle-question"></i>
                   <p>Помощь</p>
                </div>
-               <hr>
-
                   <a class="iloveimg" href="https://www.iloveimg.com/ru"> <i class="fa-solid fa-heart-circle-bolt"></i> iLoveIMG</a>
             </div>
             </div>
@@ -241,12 +238,6 @@ export default {
       toPage(router) {
          return this.$router.push({name: router})
       },
-      convertMenuOpen() {
-         this.convertMenu = !this.convertMenu
-      },
-      allMenuOpen() {
-         this.allInstruments = !this.allInstruments
-      },
       toggleMenuProductFunc() {
          this.toggleMenuProduct = !this.toggleMenuProduct
       },
@@ -260,5 +251,5 @@ export default {
 
 
 <style scoped>
-   @import url('../assets/navbar.css');
+   @import url('../assets/styles/navbar.css');
 </style>

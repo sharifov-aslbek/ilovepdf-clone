@@ -1,6 +1,7 @@
 .head {
    position: sticky;
    top: 0;
+   z-index: 9999;
 }
 .head .navbar {
    display: flex;
@@ -83,6 +84,11 @@
    gap: 4px;
 }
 
+.head .navbar .menu .all-instruments .all-menu a img {
+   width: 30px;
+   height: 30px;
+}
+
 .head .navbar .menu .all-instruments .all-menu a:hover {
    color: #e5322d;
 }
@@ -99,6 +105,8 @@
    justify-content: center;
    gap: 5px;
    font-size: 13px;
+   padding-top: 9px;
+   padding-bottom: 10px;
 }
 
 .head .navbar .menu .convert-link i {
@@ -113,7 +121,7 @@
    align-items: flex-start;
    justify-content: space-around;
    position: absolute;
-   margin-top: 45px;
+   margin-top: 35px;
    gap: 20px;
    width: 530px;
    height: 320px;
@@ -129,7 +137,7 @@
    align-items: flex-start;
    justify-content: space-around;
    position: absolute;
-   margin-top: 45px;
+   margin-top: 40px;
    gap: 20px;
    width: 91%;
    position: absolute;
@@ -179,10 +187,18 @@
    flex-direction: column;
 }
 
+.head .navbar .actions .menu-navigation #bars {
+   /* width: 40px; */
+   height: 42px;
+   position: relative;
+   top: 13px;  
+   /* padding: 15px 0px; */
+}
+
 .head .navbar .actions .menu-navigation .navigation {
    position: absolute;
-   top: 70px;
-   right: 67px;
+   top: 45px;
+   right: 53px;
    display: flex;
    align-items: flex-start;
    padding-left: 12px;
@@ -207,14 +223,6 @@
    font-size: 15px;  
 }
 
-.head .navbar .actions .menu-navigation .navigation hr {
-   height: 0.7px;
-   background: rgb(190, 190, 190);
-   border: none;
-   position: relative;
-   z-index: 9999;
-   width: 180px;
-}
 
 .head .navbar .actions .menu-navigation .navigation p {
    font-size: 12px;
@@ -303,9 +311,9 @@
    position: absolute;
    top: 55px;
    text-align: center;
-   right: 170px;
-   width: 250px;
-   padding: 0 15px;
+   right: 160px;
+   width: 300px;
+   padding: 10px 15px;
    font-size: 10px;
    background: rgb(61, 61, 61);
    color: #fff;
@@ -313,15 +321,14 @@
 }
 
 .head .navbar .actions .onHover .arrow-up {
-
   width: 0; 
   height: 0; 
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
   position: absolute;
-  bottom: 55px;
-  left: 125px;
-  border-bottom: 5px solid black;
+  bottom: 47px;
+  left: 138px;
+  border-bottom: 7px solid black;
 
 }
 .head .navbar .actions a {

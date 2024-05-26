@@ -34,6 +34,11 @@ const router = createRouter({
       path: '/desktop',
       name: 'desktop',
       component: () => import('../views/DesktopView.vue')
+    },
+    {
+      path: '/features',
+      name: 'features',
+      component: () => import("../views/FeaturesView.vue")
     }
   ]
 })

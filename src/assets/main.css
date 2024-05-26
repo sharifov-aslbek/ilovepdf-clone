@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .container {
   width: 100%;
   max-width: 91%;
@@ -6,7 +12,7 @@
 }
 @font-face {
   font-family: 'Roboto';
-  src: url('../assets/NotoSans-Regular.ttf');
+  src: url('../assets/REM-Regular.ttf');
 }
 body {
   font-family: 'Roboto' , sans-serif;

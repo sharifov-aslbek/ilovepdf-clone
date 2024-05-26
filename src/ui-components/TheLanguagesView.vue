@@ -69,6 +69,10 @@ export default {
    }
 
 
+   .languages .category a:hover {
+      color: #e5322d;
+   }
+
    
    @media (max-width:467px) {
       .languages {
