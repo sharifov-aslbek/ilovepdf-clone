@@ -1,0 +1,1 @@
+import{_ as e,c as s,o,a as t}from"./index-ChUfChYL.js";const c={},a=t("h3",null,"This is desktop page ",-1),n=[a];function r(_,p,i,d,l,f){return o(),s("div",null,n)}const h=e(c,[["render",r]]);export{h as default};

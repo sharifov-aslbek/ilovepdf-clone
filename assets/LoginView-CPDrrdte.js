@@ -1,0 +1,1 @@
+import{_ as e,c as o,o as s,a as t}from"./index-ChUfChYL.js";const c={},n={class:"container"},a=t("h1",null,"this is login page",-1),_=[a];function i(r,d,p,l,f,h){return s(),o("div",n,_)}const m=e(c,[["render",i]]);export{m as default};
