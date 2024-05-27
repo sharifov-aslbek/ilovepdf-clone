@@ -2,7 +2,7 @@
    <header class="head">
       <nav class="navbar">
            <div class="logo">
-            <img src="../assets/images/logo.svg" alt="err" @click="toHome">
+            <img src="../assets/images/logo.svg" alt="err" @click="toPage('home')">
            </div>
 
            <div class="menu">
@@ -127,7 +127,7 @@
               
             <router-link :to="{name: 'login'}" class="login">Вход</router-link>
             <router-link :to="{name: 'register'}" class="register">Регистрация</router-link>
-            <div class="menu-product" :class="{'active': toggleMenuProduct}" @mouseleave='toggleMenuProduct = false'>
+            <div class="menu-product" :class="{'active': toggleMenuProduct}" @mouseenter="toggleMenuProduct = true" @mouseleave='menuClose'>
                      <router-link :to="{name: 'desktop'}">
                         <i class="fa-solid fa-desktop"></i>
                         <p>Настольная версия</p>
@@ -177,13 +177,13 @@
                <div id="bars" @mouseenter="AllMenuOpen = true" @mouseleave="AllMenuOpen = !AllMenuOpen">
                   <i class="fa-solid fa-bars"></i>
                </div>
-            <div class="navigation" :class="{'active': AllMenuOpen}" @mouseenter="AllMenuOpen = !AllMenuOpen" @mouseleave="AllMenuOpen = !AllMenuOpen">
+            <div class="navigation" :class="{'active': AllMenuOpen}" @mouseenter="AllMenuOpen = !AllMenuOpen" @mouseleave="allMenuOpenBig">
                <!-- for mouse leave navigation @mouseleave="allMenuOpenBig" -->
                <div class="home">
                   <router-link :to="{name: 'home'}"><i class="fa-solid fa-heart"></i> Главная страница</router-link>
                </div>
 
-               <div class="products" @mouseenter="toggleMenuProduct = true">
+               <div class="products" @mouseenter="toggleMenuProduct = true" @mouseleave="toggleMenuProduct = false">
                   <i class="fa-solid fa-box"></i>
                   <p>Продукт</p>
                </div>
@@ -229,21 +229,20 @@ export default {
       }
    },
    methods: {
-      toHome() {
-         return this.$router.push({name: 'home'})
-      },
-      toDesktop() {
-         return this.$router.push({name: 'desktop'})
-      },
       toPage(router) {
          return this.$router.push({name: router})
       },
       toggleMenuProductFunc() {
          this.toggleMenuProduct = !this.toggleMenuProduct
       },
-      allMenuOpenBig() {
-         this.AllMenuOpen = false
+      menuClose() {
          this.toggleMenuProduct = false
+         this.AllMenuOpen = false
+      },
+      allMenuOpenBig() {
+         if(this.toggleMenuProduct) {
+            this.AllMenuOpen = true
+         }
       }
    }, 
 }

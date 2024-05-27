@@ -43,7 +43,7 @@ export default {
    display: flex;
    align-items: flex-start;
    flex-direction: column;
-   gap: 7px;
+   gap: 20px;
 }
 
 .right p {
@@ -59,6 +59,11 @@ export default {
 .right a {
    display: flex;
    align-items: center;
+   gap: 5px;
+}
+
+.right a img {
+   width: 30px;
 }
 
 .right a:hover {

@@ -39,8 +39,19 @@ const router = createRouter({
       path: '/features',
       name: 'features',
       component: () => import("../views/FeaturesView.vue")
+    },
+    {
+      path: '/documentation',
+      name: 'documentation',
+      component: () => import('../views/Documentation.vue')
+    },
+    {
+      path: '/mobile',
+      name: 'mobile',
+      component: () => import('../views/MobileView.vue')
     }
   ]
 })
+
 
 export default router

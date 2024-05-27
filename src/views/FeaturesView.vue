@@ -123,7 +123,7 @@
             </div>
          </div>
       </div>
-
+      <!-- containerdan tashqarida -->
       <div class="heart">
          <i class="fa-solid fa-heart-pulse"></i>
          <h2 class="heart-title">Каждая ваша текущая проблема с PDF, может стать нашей следующей задачей</h2>

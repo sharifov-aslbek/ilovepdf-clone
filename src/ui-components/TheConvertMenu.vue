@@ -24,7 +24,7 @@
             </router-link>
 
             <router-link to=''>
-            <img src="../assets/images/convertor-img5.png" alt="">
+            <img src="../assets/images/html-pdf-card-img.png" alt="">
             <p>HTML в PDF</p>
             </router-link>
 </div>
@@ -48,7 +48,7 @@ export default {
    display: flex;
    align-items: flex-start;
    flex-direction: column;
-   gap: 7px;
+   gap: 20px;
 }
 
 .left .title-text {
@@ -60,6 +60,11 @@ export default {
    display: flex;
    align-items: center;
    gap: 5px;
+}
+
+.left a img {
+   width: 30px;
+   /* height: 45px; */
 }
 
 .left a:hover {

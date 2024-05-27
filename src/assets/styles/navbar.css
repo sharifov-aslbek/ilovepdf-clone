@@ -49,26 +49,27 @@
    flex-direction: column;
 }
 
+
 .head .navbar .menu .all-instruments .organization {
    display: flex;
-   gap: 7px;
+   gap: 20px;
    flex-direction: column;
 }
 .head .navbar .menu .all-instruments .optimization {
    display: flex;
-   gap: 7px;
+   gap: 20px;
    flex-direction: column;
 }
 
 .head .navbar .menu .all-instruments .edit {
    display: flex;
-   gap: 7px;
+   gap: 20px;
    flex-direction: column;
 }
 .head .navbar .menu .all-instruments .protection {
    display: flex;
    flex-direction: column;
-   gap: 7px;
+   gap: 20px;
 }
 
 
@@ -81,12 +82,12 @@
 .head .navbar .menu .all-instruments .all-menu a {
    display: flex;
    align-items: center;
-   gap: 4px;
+   gap: 5px;
 }
 
 .head .navbar .menu .all-instruments .all-menu a img {
    width: 30px;
-   height: 30px;
+   /* height: 30px; */
 }
 
 .head .navbar .menu .all-instruments .all-menu a:hover {
@@ -142,7 +143,7 @@
    width: 91%;
    position: absolute;
    left: 50px;
-   height: 320px;
+   height: 350px;
    box-shadow: 3px 2px 18px 4px rgba(191, 191, 191, 0.75);
    -webkit-box-shadow: 3px 2px 18px 4px rgba(194, 194, 194, 0.75);
    -moz-box-shadow: 3px 2px 18px 4px rgba(194, 194, 194, 0.75);
@@ -209,7 +210,7 @@
    border-radius: 10px;
    background: rgb(255, 255, 255);
    transform: translateY(10%);
-   transition: 0.4s;
+   transition: 0.2s;
    height: 0px;
    overflow: hidden;
 }  
@@ -232,11 +233,13 @@
    padding: 5px 10px;
    width: 90%;
    height: 35px;
+   margin: 0 auto;
    border-radius: 5px;
 }
 
-.head .navbar .actions .menu-navigation .navigation a:hover,
-.head .navbar .actions .menu-navigation .navigation div:hover
+
+.head .navbar .actions .menu-navigation .navigation div:hover , 
+.head .navbar .actions .menu-navigation .navigation .iloveimg:hover
 {
    transition: 0.3s;
    color: #e5322d;
@@ -297,6 +300,8 @@
    gap: 10px;
    padding: 5px 10px;
    font-size: 12px;
+   width: 90%;
+   margin: 0 auto;
 }
 
 .head .navbar .actions .menu-navigation .navigation .iloveimg i {
@@ -359,12 +364,12 @@
 
 .head .navbar .actions .menu-product {
    position: absolute;
-   right: 280px;
+   right: 200px;
    top: 20px;
    background: white;
    border-radius: 10px;
    transform: translateY(10%);
-   transition: 0.4s;
+   transition: 0.2s;
    height: 0px;
    overflow: hidden;
 }

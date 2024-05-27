@@ -8,7 +8,7 @@
                </h3>
 
                <router-link to="">Главная страница</router-link>
-               <router-link to="">Характеристики</router-link>
+               <router-link :to="{name: 'features'}">Характеристики</router-link>
                <router-link to="">Расценки</router-link>
                <router-link to="">Инструменты</router-link>
                <router-link to="">Вопросы-Ответы</router-link>
@@ -19,7 +19,7 @@
                </h3>
 
                <router-link to="">iLovePDF Desktop</router-link>
-               <router-link to="">iLovePDF Mobile</router-link>
+               <router-link :to="{name: 'mobile'}">iLovePDF Mobile</router-link>
                <router-link to="">Разработчики</router-link>
                <router-link to="">Плагин для WordPress</router-link>
                <router-link to="">iloveimg.com</router-link>
@@ -114,7 +114,7 @@ export default {
 
    .footer .container .text-content {
       display: flex;
-      justify-content: space-around;
+      justify-content: space-between;
       flex-wrap: wrap;
       /* justify-content: center; */
    }
