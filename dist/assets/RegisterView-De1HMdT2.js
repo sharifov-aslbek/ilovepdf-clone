@@ -1,0 +1,1 @@
+import{_ as e,c as t,o as s,a as o}from"./index-ChUfChYL.js";const c={},r=o("h1",null,"this register page",-1),a=[r];function n(_,i,p,d,l,f){return s(),t("div",null,a)}const h=e(c,[["render",n]]);export{h as default};
