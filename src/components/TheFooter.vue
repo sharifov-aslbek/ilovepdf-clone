@@ -209,7 +209,7 @@ export default {
    }
    @media (max-width:1300px) {
       .footer .container .menu-language {
-         top: 120px;
+         top: 70px;
       }
    }
    @media (max-width:1259px) {
@@ -225,10 +225,10 @@ export default {
 
    @media (max-width:1225px)  {
       .footer .container .menu-language {
-         top: 340px;
+         top: 270px;
       }
    }
-   @media (max-width:625px) {
+   @media (max-width:640px) {
       .footer .container .text-content .content {
          width: 190px;
       }
@@ -242,6 +242,16 @@ export default {
 
       .footer .container .foot .editor {
          flex-direction: column;
+      }
+
+      .footer .container .menu-language {
+         top: 230px;
+      }
+   }
+
+   @media (max-width:485px) {
+      .footer .container .menu-language {
+         top: 490px;
       }
    }
 
@@ -262,7 +272,7 @@ export default {
          font-size: 11px; 
       }
       .footer .container .menu-language {
-         top: 280px;
+         top: 198px;
       }
       .footer .container .foot .language {
          justify-content: center;
@@ -273,7 +283,10 @@ export default {
    
    }
 
-   @media (max-width:365px) {
+   @media (max-width:380px) {
+      .footer .container .text-content {
+         gap: 25px;
+      }
       .footer .container .text-content .content {
          width: 250px;
       }
@@ -289,7 +302,7 @@ export default {
       }
 
       .footer .container .menu-language {
-         top: 700px;
+         top: 595px;
       }
    }
 </style>

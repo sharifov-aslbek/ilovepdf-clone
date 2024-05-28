@@ -33,7 +33,7 @@ export default {
    -webkit-box-shadow: 0 5px 30px 0 hsla(0, 0%, 9%, .1);
     box-shadow: 0 5px 30px 0 hsla(0, 0%, 9% , .1);
    height: 100%;
-   min-height: 420px;
+   min-height: 480px;
     border-radius: 7px;
     gap: 20px;    
 }
@@ -50,5 +50,19 @@ export default {
    color: #707078;
    width: 100%;
    max-width: 310px;
+}
+
+
+@media (max-width:790px) {
+    .card {
+      width: 100%;
+      max-width: 95%;
+      min-height: 300px;
+   }
+
+       .card .subtitle {
+      max-width: 560px;
+      font-size: 14px;
+   }
 }
 </style>

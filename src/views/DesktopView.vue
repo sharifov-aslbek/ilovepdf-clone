@@ -211,4 +211,5 @@ export default {
     flex-wrap: wrap;
     gap: 30px;  
   }
+
 </style>

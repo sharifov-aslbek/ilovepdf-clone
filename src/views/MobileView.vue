@@ -391,18 +391,6 @@ body {
    color: #e5322d;
    cursor: pointer;
 }
-@media (max-width:790px) {
-   .mobile .container .cards-hero .cards .card {
-      width: 100%;
-      max-width: 95%;
-      min-height: 300px;
-   }
-
-   .mobile .container .cards-hero .card .subtitle {
-      max-width: 560px;
-      font-size: 14px;
-   }
-}
 
 @media (max-width:730px) {
    .mobile .apps .app {
