@@ -30,27 +30,14 @@
             </div>
 
             <div class="cards" :class="{'active': cardOpener}">
-               <div class="card">
-                  <img src="../assets/images/mobile-card-img1.svg" alt="#">
-                  <h3 class="card-title">Редактор PDF</h3>
-                  <p class="subtitle">
-                     Включайте красочные комментарии и аннотации в Ваш PDF-документ, чтобы выделить важную информацию.
-                  </p>
-               </div>
-               <div class="card">
-                  <img src="../assets/images/mobile-card-img2.svg" alt="#">
-                  <h3 class="card-title">Электронная подпись и сканер</h3>
-                  <p class="subtitle">
-                     Подписывайте любые документы на смартфонах и планшетах — печатать ничего не нужно. Используйте электронную подпись и отправляйте заполненные файлы в формате PDF быстро и без труда.
-                  </p>
-               </div>
-               <div class="card">
-                  <img src="../assets/images/mobile-card-img3.svg" alt="#">
-                  <h3 class="card-title">Файловый менеджер</h3>
-                  <p class="subtitle">
-                     Организуйте свои файлы на своем устройстве. Хранение документов еще никогда не было таким легким и простым.
-                  </p>
-               </div>
+               <Instrument :img="'src/assets/images/mobile-card-img1.svg'" :title="'Редактор PDF'" 
+               :subtitle="'Включайте красочные комментарии и аннотации в Ваш PDF-документ, чтобы выделить важную информацию.'" />
+
+               <Instrument :img="'src/assets/images/mobile-card-img2.svg'" :title="'Электронная подпись и сканер'" 
+               :subtitle="'Подписывайте любые документы на смартфонах и планшетах — печатать ничего не нужно. Используйте электронную подпись и отправляйте заполненные файлы в формате PDF быстро и без труда.'" />
+
+               <Instrument :img="'src/assets/images/mobile-card-img3.svg'" :title="'Файловый менеджер'"
+                :subtitle="'Организуйте свои файлы на своем устройстве. Хранение документов еще никогда не было таким легким и простым.'" />
             </div>
          </div>
 
@@ -282,35 +269,6 @@ body {
 
 .mobile .container .cards-hero .cards.active {
    opacity: 1;
-}
-.mobile .container .cards-hero .cards .card {
-   width: 100%;
-   max-width: 320px;
-   display: flex;
-   align-items: flex-start;  
-   flex-direction: column;
-   margin: 0px 0px 32px;
-   padding: 32px 32px 48px;
-   -webkit-box-shadow: 0 5px 30px 0 hsla(0, 0%, 9%, .1);
-    box-shadow: 0 5px 30px 0 hsla(0, 0%, 9% , .1);
-   height: 100%;
-   min-height: 420px;
-    border-radius: 7px;
-    gap: 20px; 
-}
-.mobile .container .cards-hero .card .card-title {
-   font-weight: 500;
-   font-size: 20px;
-   line-height: 28px;
-   color: #33333b;
-}
-
-.mobile .container .cards-hero .card .subtitle {
-   line-height: 28px;
-   font-size: 16px;
-   color: #707078;
-   width: 100%;
-   max-width: 310px;
 }
 
 .mobile .container .about {
